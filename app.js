@@ -1,9 +1,13 @@
-
-const endDate = new Date("31 oct,2026 21:00:00").getTime();
+const et = document.querySelector("#et");
+// const endDate = new Date("31 oct,2026 21:00:00").getTime();
 const startDate = new Date().getTime();
+let x;
+et.addEventListener("change",function(){
+  clearInterval(x);
+  const endDate =new Date(et.value).getTime();
 
 
- let x = setInterval(function updateTimer(){
+  x = setInterval(function updateTimer(){
   const now = new Date().getTime();
   
   const distancecovered = now - startDate;
@@ -41,3 +45,5 @@ if (distancepending <0){
 }
 
  ,1000);
+
+ })
