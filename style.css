@@ -61,22 +61,8 @@ span{
 }
 .clender{
     margin-bottom: 2.5rem;
-    display: flex;
-    gap: 30px;
-    justify-content: baseline; 
-    
 }
-.startTime{
-    margin-bottom: 1rem;
-    
-}
-.endTime{
-    display: inline-block;
-}
-span{
-    font-size: 50px;
-    
-} 
+
 .clender input{
     background-color: rgb(155, 155, 159) ;
     font-size: x-large;
